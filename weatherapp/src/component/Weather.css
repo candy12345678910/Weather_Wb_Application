@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 100vh;
+    background-color: rgba(158, 200, 255, 0.644);
+    /* background-color: rgba(224, 158, 255, 0.644); */
+}
+.contain{
+    height: 85%;
+    width:100%;
+    max-width: 950px;
+    background-image: linear-gradient(to left bottom,rgb(10, 39, 94),rgb(39, 88, 179),rgb(88, 187, 253));
+    /* background-image: linear-gradient(to left bottom,rgb(17, 7, 73),rgb(70, 30, 165),rgb(202, 111, 255)); */
+    border-radius: 12px;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.heading{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position:absolute;
+    top: 5%;
+    left:7%;
+}
+/*------------ Search div -------------*/
+.search-box{
+    overflow: hidden;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 45%;
+    position:absolute;
+    top: 10%;
+    left:72%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    color:rgb(80, 80, 80);
+    padding: 10px 5px;
+    flex:1;
+    width:50%;
+    background-color: rgba(240, 248, 255, 0);
+    border:solid white 3px;
+    border-radius: 30px;
+    outline: none;
+}
+.button{
+    width:15%;
+    min-width: 60px;
+    color: rgb(255, 255, 255);
+    /* border:none; */
+    border:solid white 3px;
+    background-color: rgb(121, 121, 121);
+    /* background-color: rgba(240, 248, 255, 0); */
+    outline: none;
+    border-radius: 30px;
+}
+
+
+/*------------ Temperature div -------------*/
+.temp-box{
+    position: absolute;
+    top:70%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 550px;
+    background-color: rgba(255, 0, 34, 0);
+    padding-top: 30px;
+}
+/* .temp-pic{
+    height: 130px;
+    position: absolute;
+    top:70%;
+    left:43%;
+    transform: translate(-50%,-50%);
+} */
+.temp{
+    position: absolute;
+    top:70%;
+    left:42%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+}
+.feel{
+    position: absolute;
+    top:98%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+/*---------------------middle pic------------------*/
+
+.temp-pic{
+    height: 200px;
+    position: absolute;
+    top:50%;
+    left:43%;
+    transform: translate(-50%,-50%);
+}
+
+/*--------------------location---------------------*/
+.location_box{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    height: 130px;
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0);
+
+}
+.location{
+    /* display: none; */
+    position: absolute;
+    top: 15%;
+    left: 0%;  
+    /* transform: translate(-50%,-50%); */
+    height: 30px;
+}
+.city{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 25px;
+    top:15%;
+    left:5%;
+    /* transform: translate(-50%,-50%); */
+}
+.haze{
+    color: white;
+    position: absolute;
+    font-size: 39px;
+    top:50%;
+    left:0%;
+    /* transform: translate(-50%,-50%); */
+}
+
+/*--------------Weather list--------------*/
+.list-box li{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    line-height: 40px;
+    padding: 25px 0px 0px 5px;
+}
+.list-box li h4{
+    color: white;
+}
+.list_image{
+    /* list-style: none; */
+    height: 25px;
+}
+.list-box{
+    width: 230px;
+    height: 300px;
+    background-color: rgba(0, 47, 255, 0);
+    /* border: solid 3px white; */
+    border-radius: 15px;
+    
+    position: absolute;
+    top:55%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+
+/*--------------media quayr----------------*/
+@media screen and (max-width:768px){
+    .contain{
+        overflow: hidden;
+        max-width: 700px;
+    }
+
+    .location_box{
+        top: 35%;
+        left: 58%;
+        transform: translate(-50%,-50%);
+        height: 130px;
+        width: 700px;
+        background-color: rgba(255, 0, 0, 0);
+    
+    }
+}
+@media screen and (max-width:606px){
+    
+    .contain{
+        overflow: hidden;
+        /* width: 600px; */
+        border-radius: 0%;
+        height: 100vh;
+        width: 100%;
+        position: none;
+        top: 0;
+        left:0;
+        transform: translate(0%,0%);
+    }
+    .list-box{
+        width: 90%;
+        height: 150px;
+        position: absolute;
+        top:63%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .heading{
+        display: none;
+    }
+
+    .search-box{
+        width: 80%;
+        top: 6%;
+        left:50%;
+    }
+
+    .location_box{
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 130px;
+        width: 700px;
+        background-color: rgba(255, 0, 0, 0);
+    
+    }
+    .location{
+        display: none;
+    }
+    .city{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        font-size: 18px;
+        top:3%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .haze{
+        color: white;
+        position: absolute;
+        font-size: 28px;
+        top:25%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .temp-pic{
+        height: 110px;
+        position: absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .temp-box{
+        position: absolute;
+        top:37%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        height: 150px;
+        width: 550px;
+        background-color: rgba(255, 0, 34, 0);
+        padding-top: 30px;
+    }
+    .temp{
+        position: absolute;
+        top:70%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    .feel{
+        position: absolute;
+        top:90%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
